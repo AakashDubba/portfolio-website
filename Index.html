@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aakash Dubba | Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #0d1117;
+      color: #c9d1d9;
+      line-height: 1.7;
+    }
+
+    /* --- Hero Section --- */
+    .hero {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80')
+        center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 50px;
+      border-radius: 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .overlay h1 {
+      font-size: 2.8rem;
+      color: #58a6ff;
+    }
+
+    .overlay p {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      color: #d1d5db;
+    }
+
+    .btn {
+      margin-top: 25px;
+      background-color: #58a6ff;
+      color: #fff;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #1f6feb;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* --- Content --- */
+    .container {
+      width: 85%;
+      margin: 40px auto;
+      animation: fadeIn 1.2s ease;
+    }
+
+    h2 {
+      color: #58a6ff;
+      border-bottom: 2px solid #30363d;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-left: 20px;
+      list-style-type: square;
+    }
+
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #161b22;
+      text-align: center;
+      color: #8b949e;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay">
+      <h1>Aakash Dubba</h1>
+      <p>AI/ML Enthusiast • Front-End Developer • Creative Designer</p>
+      <button class="btn" onclick="scrollToSection()">Explore My Work</button>
+    </div>
+  </section>
+
+  <!-- Portfolio Content -->
+  <div class="container" id="content">
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I’m a B.Tech student in Computer Science (AI & ML) with a passion for
+        innovation and problem-solving. I enjoy exploring new technologies,
+        building creative solutions, and continuously improving my technical
+        skills to keep up with the evolving tech world.
+      </p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Python, Java, HTML, CSS</li>
+        <li>Git, GitHub, Excel, PowerPoint</li>
+        <li>Problem-Solving & Analytical Thinking</li>
+        <li>Teamwork, Adaptability, and Multitasking</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <b>Manager-Employee Dashboard</b> – Node.js, React Leaflet, HTML5 Geo
+          API<br />
+          <a href="https://github.com/aakashdubba/manager-employee-dashboard"
+            target="_blank">🔗 GitHub</a>
+        </li>
+        <li>
+          <b>Smart Image Gallery</b> – Mistral AI API, Sentence Transformers,
+          LLM<br />
+          <a href="https://github.com/aakashdubba/smart-image-gallery"
+            target="_blank">🔗 GitHub</a>
+        </li>
+        <li><b>Battery Health Monitoring System</b> – ML (Random Forests, Decision Trees)</li>
+        <li><b>AI-Driven Smart Management for Cultural Heritage</b> – Ongoing</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li>Woxsen University – B.Tech CSE-AIML | CGPA: 7.56 | (2023–2027)</li>
+        <li>Sri Balaji Junior College – MPC (2021–2023)</li>
+        <li>SPR School of Excellence (2018–2021)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Achievements</h2>
+      <ul>
+        <li>Winner – Ideathon, Woxsen University</li>
+        <li>ISRO Space Hackathon, IISF 2023</li>
+        <li>Gold Medal – District-level Skating (RSFI)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <p>
+        <b>Campus Job – School of Architecture & Planning, Woxsen University</b><br />
+        (Feb 2025 – Present)<br />
+        Role: Desktop Field Work<br />
+        Working on “AI-Driven Smart Management for Cultural Heritage”.
+      </p>
+    </section>
+  </div>
+
+  <footer>© 2025 Aakash Dubba | Designed with purpose 🌱</footer>
+
+  <script>
+    function scrollToSection() {
+      document.getElementById("content").scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+</body>
+</html>
